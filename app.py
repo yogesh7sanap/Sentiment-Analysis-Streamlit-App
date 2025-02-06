@@ -20,7 +20,7 @@ import re
 import nltk
 
 # Load the model, vectorizer, and encoder
-model_xgb = pickle.load(open("model_xgb.pkl", "rb"))
+# model_xgb = pickle.load(open("model_xgb.pkl", "rb"))
 model = pickle.load(open("model_logistic.pkl", "rb"))
 vectorizer = pickle.load(open("tfidf_vectorizer.pkl", "rb"))
 encoder = pickle.load(open("label_encoder.pkl", "rb"))  # Load the saved LabelEncoder
