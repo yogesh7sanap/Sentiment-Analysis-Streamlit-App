@@ -2,6 +2,7 @@ import streamlit as st
 import sklearn
 
 # Download NLTK corpora
+import nltk
 nltk.download('stopwords')
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
@@ -24,7 +25,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import re
-import nltk
 
 # Load the model, vectorizer, and encoder
 # model_xgb = pickle.load(open("model_xgb.pkl", "rb"))
