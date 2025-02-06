@@ -1,18 +1,6 @@
 import streamlit as st
 import sklearn
 
-# Download NLTK corpora
-import nltk
-nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('wordnet')
-nltk.download('omw-1.4')
-nltk.download('punkt_tab')
-
-from nltk.tokenize import sent_tokenize
-from nltk.tokenize import word_tokenize
-
 #changing background color
 # st.markdown("""
 #     <style>
@@ -28,7 +16,19 @@ import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+from nltk.tokenize import sent_tokenize
+from nltk.tokenize import word_tokenize
+import nltk
 import re
+
+# Download NLTK corpora
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+nltk.download('punkt_tab')
+
 
 # Load the model, vectorizer, and encoder
 # model_xgb = pickle.load(open("model_xgb.pkl", "rb"))
